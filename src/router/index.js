@@ -20,27 +20,32 @@ export default new VueRouter({
             redirect:'/home', //重定向
             component:Main,
             children:[
-                {
+                {   
+                    name:'home',
                     path:'home',  //首页
                     component:Home
                 },
         
                 {
+                    name:'user',
                     path:'user',  //用户管理
                     component:User
                 },
 
                 {
+                    name:'mall',
                     path:'mall',  //商品管理
                     component:Mall
                 },
 
                 {
+                    name:'page1',
                     path:'Page1',  //页面1
                     component:PageOne
                 },
 
                 {
+                    name:'page2',
                     path:'Page2',  //页面2
                     component:PageTwo
                 }
